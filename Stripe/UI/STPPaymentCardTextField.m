@@ -140,7 +140,7 @@ CGFloat const STPPaymentCardTextFieldDefaultPadding = 10;
 }
 
 - (UIColor *)backgroundColor {
-    return [super backgroundColor] ?: [UIColor whiteColor];
+    return [super backgroundColor] ?: [UIColor clearColor];
 }
 
 - (void)setFont:(UIFont *)font {
