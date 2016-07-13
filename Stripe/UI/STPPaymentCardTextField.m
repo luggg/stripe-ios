@@ -479,12 +479,12 @@ CGFloat const STPPaymentCardTextFieldDefaultPadding = 10;
 }
 
 - (CGRect)brandImageRectForBounds:(CGRect)bounds {
-    return CGRectMake(STPPaymentCardTextFieldDefaultPadding, 2, self.brandImageView.image.size.width, bounds.size.height - 2);
+    return CGRectMake(STPPaymentCardTextFieldDefaultPadding, 0, self.brandImageView.image.size.width, bounds.size.height);
 }
 
 - (CGRect)fieldsRectForBounds:(CGRect)bounds {
     CGRect brandImageRect = [self brandImageRectForBounds:bounds];
-    return CGRectMake(CGRectGetMaxX(brandImageRect), 0, CGRectGetWidth(bounds) - CGRectGetMaxX(brandImageRect), CGRectGetHeight(bounds));
+    return CGRectMake(CGRectGetMaxX(brandImageRect), 1, CGRectGetWidth(bounds) - CGRectGetMaxX(brandImageRect), CGRectGetHeight(bounds));
 }
 
 - (CGRect)numberFieldRectForBounds:(CGRect)bounds {
