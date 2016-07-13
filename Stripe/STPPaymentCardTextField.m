@@ -491,7 +491,7 @@ CGFloat const STPPaymentCardTextFieldDefaultPadding = 13;
 
 - (CGRect)fieldsRectForBounds:(CGRect)bounds {
     CGRect brandImageRect = [self brandImageRectForBounds:bounds];
-    return CGRectMake(CGRectGetMaxX(brandImageRect), 0, CGRectGetWidth(bounds) - CGRectGetMaxX(brandImageRect), CGRectGetHeight(bounds));
+    return CGRectMake(CGRectGetMaxX(brandImageRect), 1, CGRectGetWidth(bounds) - CGRectGetMaxX(brandImageRect), CGRectGetHeight(bounds));
 }
 
 - (CGRect)numberFieldRectForBounds:(CGRect)bounds {
